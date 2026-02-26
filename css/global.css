@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Inter', -apple-system, Roboto, Helvetica, sans-serif;
+  color: #000;
+  background: #fff;
+  line-height: 1.6;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  height: 60px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hamburger-custom {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  margin-right: 8px;
+}
+
+.hamburger-custom span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background-color: black;
+  border-radius: 2px;
+}
+
+.logo, .logo-ucl {
+  height: 28px;
+  width: auto;
+}
+
+.separator {
+  color: #ddd;
+  font-size: 16px;
+  margin: 0 4px;
+}
+
+.header-center {
+  display: none; 
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sponsor-logo {
+  height: 20px;
+  width: auto;
+}
+
+.options-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0 6px;
+  color: #000;
+}
+
+.sign-in-btn {
+  display: none;
+}
+
+footer {
+  background: #fff;
+  border-top: 1px solid #e1e5ea;
+  padding: 24px 16px 16px;
+  margin-top: auto;
+}
+
+.footer-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.footer-column h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 16px 0;
+}
+
+.footer-column ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-column a {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.footer-bottom {
+  max-width: 1400px;
+  margin: 0 auto;
+  border-top: 1px solid #e1e5ea;
+  padding: 16px 16px;
+  color: #000;
+  font-size: 14px;
+}
+
+
+@media (min-width: 768px) {
+  .main-header {
+    padding: 0 30px;
+    height: 80px;
+  }
+
+  .header-left {
+    gap: 10px;
+  }
+
+  .hamburger-custom {
+    margin-right: 15px;
+    padding: 5px;
+  }
+
+  .hamburger-custom span {
+    width: 25px;
+    height: 3px;
+  }
+
+  .logo, .logo-ucl {
+    height: 40px;
+  }
+
+  .separator {
+    font-size: 24px;
+    margin: 0 5px;
+  }
+
+  .header-center {
+    display: flex;
+    gap: 40px;
+  }
+
+  .header-center a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    text-transform: capitalize;
+  }
+
+  .header-right {
+    gap: 15px;
+  }
+
+  .sponsor-logo {
+    height: 30px;
+  }
+
+  .options-icon {
+    font-size: 20px;
+    padding: 0 10px;
+  }
+
+  .sign-in-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 20px;
+    border: 1px solid #3e31fa;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #3e31fa;
+    font-weight: bold;
+  }
+
+  footer {
+    padding: 48px 30px 24px;
+  }
+
+  .footer-content {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 32px;
+    margin-bottom: 32px;
+  }
+
+  .footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+
+  .footer-column a {
+    font-size: 16px;
+    gap: 16px;
+  }
+
+  .footer-bottom {
+    padding: 24px 30px;
+    font-size: 16px;
+  }
+}
+
+
+@media (min-width: 0px) and (max-width: 500px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    font-family: 'Inter', -apple-system, Roboto, Helvetica, sans-serif;
+    color: #000;
+    background: #fff;
+    line-height: 1.6;
+  }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1;
+  }
+
+  .logo-link {
+    display: inline-block;
+    line-height: 0; 
+  }
+
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    height: 60px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 20;
+  }
+
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+  }
+
+  .hamburger-custom {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    background: none;
+    border: none;
+    padding: 2px;
+  }
+
+  .hamburger-custom span {
+    display: block;
+    width: 15px;
+    height: 2px;
+    background-color: black;
+    border-radius: 2px;
+  }
+
+  .logo {
+    height: 20px;
+    width: auto;
+   
+  }
+
+  .logo-ucl {
+    height: 20px;
+    width: auto;
+  }
+
+  .separator {
+    color: #ddd;
+    font-size: 12px;
+    margin: 0 0px;
+  }
+
+  .header-center {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .header-center a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 12px;
+    transition: color 0.2s ease;
+  }
+
+  .header-center a:hover {
+    color: var(--rm-purple);
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .sponsor-logo {
+    height: 15px;
+    margin-left: 2px;
+    width: auto;
+  }
+
+  .options-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0 4px;
+    color: #000;
+  }
+
+  .sign-in-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--rm-purple);
+    text-decoration: none;
+    font-size: 7px;
+    font-weight: 300;
+    padding: 4px 8px;
+    border: 1px solid var(--rm-purple);
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+    white-space: nowrap;
+  }
+
+  .sign-in-btn:hover {
+    background-color: rgba(62, 49, 250, 0.05);
+    border-color: #2e21ea;
+  }
+
+  footer {
+    background: #fff;
+    border-top: 1px solid #e1e5ea;
+    padding: 24px 16px 16px;
+    margin-top: auto;
+  }
+
+  .footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .footer-column h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+  }
+
+  .footer-column ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-column a {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+  }
+
+  .footer-column a:hover {
+    color: var(--rm-purple);
+  }
+
+  .footer-bottom-row {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 16px;
+    font-weight: bold;
+  }
+
+  .footer-bottom-column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .footer-bottom-column ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-bottom-column a {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+  }
+
+  .footer-bottom-column a:hover {
+    color: var(--rm-purple);
+  }
+
+  .footer-bottom {
+    max-width: 1400px;
+    margin: 0 auto;
+    border-top: 1px solid #e1e5ea;
+    padding: 16px 16px;
+    color: #000;
+    font-size: 14px;
+    text-align: left;
+  }
+}

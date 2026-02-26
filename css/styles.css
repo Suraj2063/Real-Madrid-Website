@@ -1,0 +1,886 @@
+
+:root {
+  --rm-navy: #0F2145;
+  --rm-purple: #3E31FA;
+  --rm-light-purple: #6349F8;
+  --rm-blue-light: #DBE5FD;
+  --rm-gray-light: #F3F5F8;
+  --rm-gray: #E1E5EA;
+  --rm-gray-medium: #F7F0F0;
+}
+
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+
+.match-banner {
+  background: var(--rm-navy);
+  color: white;
+  padding: 35px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.match-info-left {
+  font-size: 12px;
+}
+
+.league-name {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.match-meta {
+  color: #FFFFFF;
+}
+
+.match-center {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.team-logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+.team-name {
+  font-weight: bold;
+}
+
+.score-board {
+  text-align: center;
+  background: rgba(255,255,255,0.1);
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+.time {
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+}
+
+.vs-badge {
+  font-size: 10px;
+  color: var(--rm-blue-light);
+}
+
+.match-btn {
+  background: #E8ECF4;
+  color: var(--rm-navy);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 24px;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: default;
+}
+
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 30px;
+  width: 100%;
+}
+
+section {
+  margin-bottom: 64px;
+}
+
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  background: var(--rm-gray-light);
+  padding: 48px;
+  border-radius: 20px;
+  align-items: center;
+  text-align: left;
+}
+
+.hero-image {
+  width: 60%;
+  height: 416px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.hero h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+
+.news-grid {
+  display: grid;
+  gap: 32px;
+}
+
+.news-grid.two-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.news-grid.three-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.news-grid.four-columns {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.news-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-decoration: none;
+  color: #000;
+  transition: transform 0.2s;
+}
+
+.news-card:hover {
+  transform: translateY(-4px);
+}
+
+.news-card-image {
+  width: 100%;
+  height: 272px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.news-card-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+
+.banner-section {
+  background: var(--rm-gray);
+  padding: 32px 0;
+  margin: 32px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.banner-img {
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
+}
+
+
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+
+h2.purple {
+  color: var(--rm-purple);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+
+
+.community-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.community-section {
+  background: #1C2D4E;
+  border-radius: 20px;
+  padding: 40px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 320px;
+  overflow: hidden;
+}
+
+.community-image {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.community-image img {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 20px;
+}
+
+.community-card {
+  background: white;
+  padding: 36px 44px;
+  border-radius: 20px;
+  width: 440px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.community-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  color: #000;
+  line-height: 1.2;
+}
+
+.community-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--rm-light-purple);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  width: fit-content;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 32px;
+}
+
+.product-card {
+  background: var(--rm-gray-medium);
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+}
+
+.product-image {
+  width: 100%;
+  height: 256px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.product-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.product-subtitle {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.shop-btn {
+  width: 100%;
+  padding: 16px;
+  background: var(--rm-light-purple);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+
+.legendary-section {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.legendary-image {
+  width: 66.66%;
+  height: auto;
+  border-radius: 16px;
+}
+
+.legendary-right {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 33.33%;
+}
+
+.football-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  background: var(--rm-purple);
+  color: #fff;
+  border-radius: 30px;
+  font-size: 32px;
+  font-weight: 700;
+  width: fit-content;
+}
+
+.section-gap {
+  margin-top: 50px !important;
+  margin-bottom: 50px;
+}
+
+.section-gap h2 {
+  margin-bottom: 10px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.section-gap h3 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.sponsor-grid1 {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.sponsor-logo1 {
+  width: 180px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+
+@media (min-width: 768px) {
+  .match-info-content {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    gap: 32px;
+    padding: 24px 0;
+  }
+  
+  .container {
+    padding: 0 40px;
+  }
+  
+  section {
+    
+    margin-bottom: 64px;
+  }
+  
+  .hero {
+    flex-direction: row;
+    gap: 48px;
+    padding: 48px;
+    text-align: left;
+    margin-bottom: 32px;
+  }
+  
+  .hero-image {
+    width: 60%;
+    height: 416px;
+  }
+  
+  .hero h1 {
+    font-size: 32px;
+  }
+  
+  .news-grid.two-columns {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .news-grid.three-columns {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .news-grid.four-columns {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  
+  .news-grid {
+    gap: 32px;
+  }
+  
+  .news-card-image {
+    height: 272px;
+  }
+  
+  .news-card-title {
+    font-size: 18px;
+  }
+  
+  .banner-img {
+    max-height: 200px;
+  }
+  
+  h2 {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+  
+  h3 {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+  
+  .community-section {
+    flex-direction: row;
+    gap: 48px;
+    padding: 32px;
+  }
+  
+  .community-image {
+    width: 33.33%;
+    height: auto;
+  }
+  
+  .community-card h3 {
+    font-size: 32px;
+  }
+  
+  .product-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 32px;
+  }
+  
+  .product-image {
+    height: 256px;
+  }
+  
+  .product-title {
+    font-size: 20px;
+  }
+  
+  .shop-btn {
+    padding: 16px;
+    border-radius: 20px;
+    font-size: 20px;
+  }
+  
+  .legendary-section {
+    flex-direction: row;
+    gap: 32px;
+  }
+  
+  .legendary-image {
+    width: 66.66%;
+  }
+  
+  .legendary-right {
+    width: 33.33%;
+  }
+  
+  .football-badge {
+    padding: 16px 32px;
+    border-radius: 30px;
+    font-size: 32px;
+  }
+  
+  .section-gap {
+    margin-top: 50px !important;
+    margin-bottom: 50px;
+  }
+  
+  .section-gap h2 {
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .section-gap h3 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+  }
+}
+
+
+@media (min-width: 0px) and (max-width: 500px) {
+  .match-banner {
+    background: var(--rm-navy);
+    color: white;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    flex-wrap: nowrap;
+  }
+
+  .match-info-left {
+    font-size: 8px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 25%; 
+  }
+
+  .league-name {
+    font-weight: bold;
+    font-size: 10px;
+  }
+
+  .match-meta {
+    color: #FFFFFF;
+    font-size: 10px;
+  }
+
+  .match-center {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 50%; 
+  }
+
+  .team {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .team-logo {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+  }
+
+  .team-name {
+    font-size: 8px;
+  }
+
+  .score-board {
+    color: black;
+    text-align: center;
+    background: #DBE5FD;
+    padding: 2px 4px;
+    border-radius: 5px;
+    min-width: 48px; 
+    max-width: 60px;
+    white-space: nowrap;
+  }
+
+  .time {
+    font-size: 10px;
+  }
+
+  .vs-badge {
+    font-size: 12px;
+    color: var(--rm-blue-light);
+    display: none;
+  }
+
+  .match-btn {
+    background: #DBE5FD;
+    color: var(--rm-navy);
+    font-size: 10px;
+    font-weight: 300;
+    padding: 0px 0px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    width: 25%; 
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 16px;
+    width: 100%;
+  }
+
+  section {
+    margin-bottom: 32px;
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: var(--rm-gray-light);
+    padding: 16px;
+    border-radius: 8px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .hero-image {
+    width: 60%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 8px;
+    flex-shrink: 0;
+  }
+
+  .hero h1 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.3;
+    flex: 1;
+    margin: 0;
+  }
+
+  .news-grid,
+  .product-grid,
+  .banner-section .container > div,
+  .sponsor-grid1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .news-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-decoration: none;
+    color: #000;
+    height: auto;
+  }
+  .community-wrapper{
+    display: none;
+  }
+
+  .news-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .news-card-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    aspect-ratio: 16/9;
+  }
+
+  .news-card-title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  .product-card {
+    background: var(--rm-gray-medium);
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .product-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .product-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+    aspect-ratio: 1;
+  }
+
+  .product-title {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .shop-btn {
+    width: 100%;
+    padding: 12px;
+    background: var(--rm-light-purple);
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+
+  .banner-section {
+    background: var(--rm-gray);
+    padding: 24px 60px;
+    margin: 24px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .banner-img {
+    width: 100%;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 8px;
+    aspect-ratio: 16/9;
+  }
+
+  .sponsor-grid1 {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .sponsor-logo1 {
+    width: 100px !important; 
+    height: auto !important;
+    object-fit: contain;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    text-align: left;
+  }
+
+  h2.purple {
+    color: var(--rm-purple);
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    text-align: left;
+  }
+
+  .legendary-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    padding: 16px;
+  }
+
+  .legendary-image {
+    width: 50%;
+    height: 250px;
+    aspect-ratio: 16/9;
+    border-radius: 12px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  .legendary-right {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+  }
+
+  .football-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    background: var(--rm-purple);
+    color: #fff;
+    border-radius: 24px;
+    font-size: 12px;
+    font-weight: 700;
+    width: fit-content;
+    align-self: flex-start;
+  }
+  .news-grid.two-columns,
+  .news-grid.three-columns,
+  .news-grid.four-columns {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .legendary-right img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: contain;
+  }
+
+  .section-gap {
+    margin-top: 32px !important;
+    margin-bottom: 32px;
+  }
+
+  .section-gap h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .section-gap h3 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+  }
+}
